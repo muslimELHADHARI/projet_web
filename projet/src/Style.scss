@@ -1,0 +1,146 @@
+.App { 
+  
+  background-image: url("https://img.freepik.com/photos-gratuite/papier-aquarelle-jaune_95678-446.jpg");
+
+  display: flex;
+  justify-content: center;
+  .container{
+
+    width: 1024px;
+
+  }
+
+.Homepage{
+  .Navbar {
+    border-radius: 10px;
+    background-color: #f0f0f065;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap:100px;
+  }
+  .Navbar div {
+    margin-right: 10px;
+  }
+  
+  .Navbar img {
+    height: 30px;
+    width: auto;
+  }
+  .posts {
+    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  .post{
+    display: flex;
+    gap: 100px;
+    &:nth-child(2n+1){
+      flex-direction: row-reverse;
+    }
+    .image{
+      weight:50px;
+    }
+  }
+  }
+}
+.Inscription {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Inscription h1 {
+  text-align: center;
+  color: #333;
+}
+.Inscription form {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+}
+.Inscription form p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+.Inscription form input[type="text"],
+.Inscription form input[type="email"],
+.Inscription form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border:none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.Inscription form input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color:orangered;
+  border:#007bff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Inscription form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.Login {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Login h1 {
+  text-align: center;
+  color: #333;
+}
+.Login form {
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  gap: 20px;
+  padding: 25px;
+  //margin-top: 20px;
+}
+.Login form p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+.Login form input[type="text"],
+.Login form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border:none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.Login form input[type="text"]:focus,
+.Login form input[type="password"]:focus {
+  border-color: #007bff;
+}
+.Login form input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color:orangered;
+  border:#007bff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Login form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+}
